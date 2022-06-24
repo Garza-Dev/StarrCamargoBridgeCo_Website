@@ -423,32 +423,6 @@ span:nth-child(11) {
     background-color: crimson;
 }
 
-#time_icon {
-    color: black;
-    position: relative;
-    left: 9px;
-    top: 2px;
-    font-size: 36px;
-}
-
-#check_icon {
-    color: black;
-    position: absolute;
-    left: 22px;
-    bottom: 228px;
-    width: 45px;
-    height: 45px;
-}
-
-#cross_icon {
-    color: black;
-    position: absolute;
-    bottom: 218px;
-    left: 708px;
-    width: 60px;
-    height: 60px;
-}
-
 /* Body Info Toll Wrapper */
 
 .body-toll-info {
@@ -461,14 +435,8 @@ span:nth-child(11) {
 .body-info-grid-container {
     display: grid;
     position: relative;
-    background-color: #f3eff5;
-    height: 80vh;
-    
-    /* border: 8px solid rgb(5,102,141);
     background-color: white;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px; */
+    height: 80vh;
 }
 
 .body-info-grid-item1 {
@@ -480,9 +448,6 @@ span:nth-child(11) {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
-
-    
-    
 }
 
 .item1-header {
@@ -532,7 +497,6 @@ span:nth-child(11) {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
-
 }
 
 
@@ -849,10 +813,6 @@ span:nth-child(11) {
     padding-left: 90px;
     padding-right: 90px;
     background: rgb(5,102,141);
-
-    /* background: url(images&videos/customer_review_logos/CustRev_Background.jpg);
-    background-size: 2000px 950px;
-    background-repeat: no-repeat; */
 }
 
 .body-customer-review-info-header-wrapper {
@@ -866,7 +826,6 @@ span:nth-child(11) {
 }
 
 .body-customer-review-info-header-text {
-    /* padding-top: 15px; */
     text-align: center;
     text-transform: uppercase;
     line-height: 20px;
@@ -876,7 +835,6 @@ span:nth-child(11) {
     font-size: 4em;
     letter-spacing: 1.8px;
 }
-
 
 .body-customer-review-info-grid-container {
     display: grid;
@@ -905,7 +863,6 @@ span:nth-child(11) {
 
 .body-customer-review-info-right-text > p {
     color: #f3eff5;
-    
     text-align: center;
     font-size: 35px;
     font-family: 'Oswald', sans-serif;
@@ -928,7 +885,6 @@ span:nth-child(11) {
 .body-customer-review-info-cards-container {
     border-right: 2px solid #f3eff5;
 }
-
 
 /* Body Info Cus. Rev. Card 1 Styles */
 
