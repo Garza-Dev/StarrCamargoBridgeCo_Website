@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 15vh;
+    height: 150px;
     background-color: rgb(5,102,141);
 }
 
@@ -259,7 +259,7 @@ img {
 /* Body Header */
 
 .body-header1-background {
-    height: 6.5vh;
+    height: 65px;
     background: linear-gradient(to top, crimson, goldenrod);
 }
 
@@ -363,7 +363,7 @@ span:nth-child(11) {
 
 .body-MissionStatement-header-background {
     position: relative;
-    height: 7.5vh;
+    height: 75px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.423), rgb(216, 187, 112), goldenrod, rgba(0, 0, 0, 0.423));
 }
 
@@ -383,8 +383,7 @@ span:nth-child(11) {
 
 .body-MissionStatement-body-background {
     position: relative;
-    height: 45vh;
-    /* background: url(images&videos/MS_background.jpg); */
+    height: 450px;
     background-image: url(images&videos/MS_background.jpg);
     background-size: fill;
     background-repeat: no-repeat;
@@ -409,13 +408,12 @@ span:nth-child(11) {
 
 .body-MissionStatement-body-footer-text {
     position: relative;
-    padding-top: 25px;
+    padding-top: 40px; 
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 20px;
     text-align: center;
     text-shadow: 0 0 1px black;
     color: #f3eff5;
-    text-decoration: none;
     font-family: 'Playfair Display', serif;
     font-size: 2.1em;
     letter-spacing: 2px;
@@ -470,14 +468,14 @@ span:nth-child(11) {
     text-align: center;
     position: relative;
     padding-bottom: 15px;
-    height: 65vh;
+    height: 650px;
 }
 
 .body-info-grid-container {
     display: grid;
     position: relative;
     background-color: white;
-    height: 65vh;
+    height: 650px;
 }
 
 .body-info-grid-item1 {
@@ -495,7 +493,7 @@ span:nth-child(11) {
 
 .item1-header {
     text-align: center;
-    line-height: 30px;
+    line-height: 45px;
     color: goldenrod;
     font-weight: 800;
     text-decoration: none;
@@ -542,7 +540,6 @@ span:nth-child(11) {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 
 .item2-header {
     line-height: 30px;
@@ -598,7 +595,7 @@ span:nth-child(11) {
 }
 
 .item3-header {
-    line-height: 30px;
+    line-height: 45px;
     text-align: center;
     color: goldenrod;
     font-weight: 800;
@@ -646,11 +643,13 @@ span:nth-child(11) {
     
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 15px;
 
     border-left: solid 3px crimson;
 }
 
 .item4-header {
+    line-height: 45px;
     text-align: center;
     color: goldenrod;
     font-weight: 800;
@@ -708,7 +707,7 @@ span:nth-child(11) {
 
 .item5-header {
     text-align: center;
-    line-height: 30px;
+    line-height: 45px;
     color: goldenrod;
     font-weight: 800;
     text-decoration: none;
@@ -758,37 +757,22 @@ span:nth-child(11) {
 
 .body-partners-info-wrapper {
     position: relative;
+    padding-top: 15px;
 }
 
 .body-partners-info-header {
-    background: linear-gradient(to right, crimson, goldenrod);
+    background: linear-gradient(170deg, crimson, goldenrod);
     position: relative;
-    height: 7vh;
+    height: 70px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     margin-left: 45px;
     margin-right: 45px;
-}
-
-.body-partners-info-content {
-    background-color: rgba(255, 255, 255, 0.781);
-    background-size: 800px 800px;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    margin-left: 185px;
-    margin-right: 185px;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
 }
 
 .body-partners-info-header-text {
     padding-top: 20px;
     line-height: 20px;
-    
     text-align: center;
     text-transform: uppercase;
     line-height: 20px;
@@ -799,56 +783,74 @@ span:nth-child(11) {
     letter-spacing: 1.8px;
 }
 
-.partners-img-slider-contents {
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.slider {
+.body-partners-img-carousel-wrapper {
+    margin: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 55px;
     position: relative;
-    width: 200px;
-    height: 180px;
-    transform-style: preserve-3d;
-    animation: rotate 50s linear infinite;
 }
 
-@keyframes rotate{
-    0%{
-        transform: perspective(800px) rotateX(0deg);
-    }
-    100%{
-        transform: perspective(800px) rotateY(360deg);
-    }
+.body-partners-img-carousel-contents {
+    background: linear-gradient(25deg, crimson, goldenrod);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: block;
 }
 
-.slider span {
+.carousel {
+    
+}
+
+.cell {
+    position: relative;
+    width: 22%;
+    height: 250px;
+    margin: 0 15px;
+   
+}
+
+.cell img {
     position: absolute;
-    top: 0;
-    left: 0;
+    overflow: visible;
     width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
-    -webkit-transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
-    filter: blur(0);
-    -webkit-filter: blur(0);
+    height: 250px;
+    object-fit: contain;
 }
 
-.slider span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: fill;
-    transition: 2s;
-    filter: blur(0);
-    -webkit-filter: blur(0);
+#BOP_IMG {
+    transform: scale(2.1);
+    padding-top: 45px;
+}
+
+#BCold_IMG {
+    transform: scale(1.8);
+    padding-top: 50px;
+}
+
+#FDA_IMG {
+    transform: scale(1.4);
+    padding-top: 50px;
+}
+
+#IndFound_IMG {
+    transform: scale(1.8);
+    padding-top: 40px;
+}
+
+#Home_IMG {
+    transform: scale(1.75);
+    padding-top: 40px;
+}
+
+#Strauns_IMG {
+    transform: scale(1.9);
+    padding-top: 40px;
+}
+
+#USDA_IMG {
+    transform: scale(1.8);
+    padding-top: 45px;
 }
 
 /* Body Info Cus. Rev. Styles */
@@ -860,7 +862,7 @@ span:nth-child(11) {
 .body-customer-review-info-content-wrapper {
     display: block; 
     justify-content: center;
-    min-height: 90vh;
+    min-height: 900px;
     padding-top: 30px;
     padding-left: 90px;
     padding-right: 90px;
@@ -873,7 +875,7 @@ span:nth-child(11) {
 
 .body-customer-review-info-header-background {
     position: relative;
-    height: 7vh;
+    height: 70px;
     background: linear-gradient(to bottom, #f3eff500, rgb(5,102,141));
 }
 
@@ -1260,7 +1262,7 @@ span:nth-child(11) {
 .footer-page-background {
     display: flex;
     background-color: rgba(0, 0, 0, 0.699);
-    min-height: 90vh;
+    min-height: 900px;
 }
 
 .footer-info-container-wrapper {
