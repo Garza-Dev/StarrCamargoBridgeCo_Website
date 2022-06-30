@@ -7,7 +7,10 @@
 
     <!-- The style of the webpage-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
+    <!-- JQuery Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,6 +177,7 @@
                 </div>
 
                 <div class="body-info-wrapper">
+
                     <div class="body-toll-info">
                         
                         <div class="body-info-grid-container">
@@ -432,6 +436,7 @@
                             </div>
 
                         </div>
+
                     </div>
 
                     <div class="body-partners-info-wrapper">
@@ -441,24 +446,19 @@
                             </div>
                         </div>
                         <div class="body-partners-info-content">
-                            <div class="partners-img-slider-wrapper">
-                                <div class="partners-img-slider-contents">
-                                    <div class="slider">
 
-                                        <span><img src="images&videos/STARR.png" id="starrLogo"></span>
-                                       
-                                        <span style="--i:1;"><img src="images&videos/partners_logos/Border-Pacific-Railroad_d1-3.png" alt=""></span>
-                                        <span style="--i:2;"><img src="images&videos/partners_logos/BorderCold.png" alt=""></span>
-                                        <span style="--i:3;"><img src="images&videos/partners_logos/FDA.png" alt=""></span>
-                                        <span style="--i:4;"><img src="images&videos/partners_logos/IndFound.png" alt=""></span>
-                                        <span style="--i:5;"><img src="images&videos/partners_logos/Logo + Rio Grande City Port of Entry.png" alt=""></span>
-                                        <span style="--i:6;"><img src="images&videos/partners_logos/STRAUNS NO AA.png" alt=""></span>
-                                        <span style="--i:7;"><img src="images&videos/partners_logos/USDA.png" alt=""></span>
-
-                                    </div>
-
+                            <div class="body-partners-img-carousel-wrapper">
+                                <div class="body-partners-img-carousel-contents">
+                                    <div class="carousel">
+                                        <div class="cell"><img src="images&videos/partners_logos/Border-Pacific-Railroad_d1-3.png" alt="" id="BOP_IMG"></div>
+                                        <div class="cell"><img src="images&videos/partners_logos/BorderCold.png" alt="" id="BCold_IMG"></div>
+                                        <div class="cell"><img src="images&videos/partners_logos/FDA.png" alt="" id="FDA_IMG"></div>
+                                        <div class="cell"><img src="images&videos/partners_logos/IndFound.png" alt="" id="IndFound_IMG"></div>
+                                        <div class="cell"><img src="images&videos/partners_logos/Logo + Rio Grande City Port of Entry.png" alt="" id="Home_IMG"></div>
+                                        <div class="cell"><img src="images&videos/partners_logos/STRAUNS NO AA.png" alt="" id="Strauns_IMG"></div>
+                                        <div class="cell"><img src="images&videos/partners_logos/USDA.png" alt="" id="USDA_IMG"></div>
+                                      </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                                             of demand exceeds the physical infrastructure and 
                                             operating capacity of our port and our border 
                                             crossings are not optimally disbursed to minimize 
-                                            scongestion.</p>
+                                            congestion.</p>
                                             <p>^Text above is subject to change^</p>
                                             <p>*We can add graphs here*</p>
                                        </div>
@@ -546,6 +546,7 @@
                         </div>
 
                     </div>
+
                 </div>
 
                 <div class="footer-page-wrapper">
@@ -563,5 +564,15 @@
         </div>
 
     </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.carousel').flickity({
+            //options
+            cellAlign: 'left',
+            wrapAround: true,
+            freeScroll: true
+        });
+    </script>
 </body>
 </html>
