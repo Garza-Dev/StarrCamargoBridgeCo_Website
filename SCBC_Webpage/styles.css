@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .body-container {
@@ -385,7 +386,7 @@ span:nth-child(11) {
     position: relative;
     height: 450px;
     background-image: url(images&videos/MS_background.jpg);
-    background-size: fill;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -398,7 +399,8 @@ span:nth-child(11) {
     line-height: 70px;
     text-align: center;
     font-style: italic;
-    color: #f3eff5;
+    color: crimson;
+    /* color: #f3eff5; */
     font-family: 'Playfair Display', serif;
     font-size: 1.8em;
     letter-spacing: 1.9px;
@@ -413,7 +415,8 @@ span:nth-child(11) {
     line-height: 20px;
     text-align: center;
     text-shadow: 0 0 1px black;
-    color: #f3eff5;
+    color: crimson;
+    /* color: #f3eff5; */
     font-family: 'Playfair Display', serif;
     font-size: 2.1em;
     letter-spacing: 2px;
@@ -796,10 +799,6 @@ span:nth-child(11) {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     display: block;
-}
-
-.carousel {
-    
 }
 
 .cell {
@@ -1253,6 +1252,109 @@ span:nth-child(11) {
     }
 }
 
+/* Body Content Info Box */
+
+.body-content-info-box-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: #f3eff5;
+}
+
+.body-content-info-box-contents-buttons {
+    position: relative;
+}
+
+.body-content-info-box-contents-buttons > ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+.body-content-info-box-contents-buttons > ul > li {
+    display: flex;
+}
+
+.body-content-info-box-contents-buttons > ul > li > button {
+    display: block;
+    margin: 0;
+    height: auto;
+    width: 250px;
+    border-radius: 55px;
+    background-color: rgb(20,20,20);
+}
+
+.body-content-info-box-contents-buttons > ul > li > button:hover {
+    background-color: crimson;
+}
+
+.body-content-info-box-contents-buttons > ul > li > button:focus {
+    background-color: crimson;
+}
+
+.body-content-info-box-contents-buttons-txt {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #f3eff5;
+}
+
+.body-content-info-box-contents-buttons > ul > li > button > img {
+    padding: 2px;
+    width: auto;
+}
+
+.body-content-info-box-contents-button-info-grid {
+    display: grid;
+    position: relative;
+}
+
+.body-content-info-box-contents-button-info-wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.body-content-info-box-contents-button-info {
+    position: relative;
+    border: 5px solid rgb(20,20,20);
+    border-radius: 15px;
+}
+
+.body-content-info-box-contents-button-info-img {
+    display: flex;
+    position: relative;
+    /* margin: 0 auto; */
+    padding: 20px;
+    padding-top: 60px;
+    justify-content: center;
+    /* transform: scale(2.8); */
+}
+
+.body-content-info-box-contents-button-info-text {
+    
+    padding: 10px;
+}
+
+.body-content-info-box-contents-button-info-text > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    
+    font-size: 3.2rem;
+    text-decoration: underline 5px solid crimson;
+}
+
+.body-content-info-box-contents-button-info-text > p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    
+    font-size: 2rem;
+}
+
 /* Footer Styles */
 
 .footer-page-wrapper {
@@ -1262,7 +1364,7 @@ span:nth-child(11) {
 .footer-page-background {
     display: flex;
     background-color: rgba(0, 0, 0, 0.699);
-    min-height: 900px;
+    min-height: 700px; 
 }
 
 .footer-info-container-wrapper {
