@@ -385,6 +385,7 @@ span:nth-child(11) {
 .body-MissionStatement-body-background {
     position: relative;
     height: 450px;
+    /* background: rgb(5,102,141); */
     background-image: url(images&videos/MS_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
