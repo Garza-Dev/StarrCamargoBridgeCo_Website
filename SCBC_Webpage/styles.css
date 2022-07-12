@@ -859,7 +859,8 @@ span:nth-child(11) {
 }
 
 .body-customer-review-info-content-wrapper {
-    display: block; 
+    position: relative;
+    display: flex; 
     justify-content: center;
     min-height: 900px;
     padding-top: 30px;
@@ -1255,10 +1256,17 @@ span:nth-child(11) {
 /* Body Content Info Box */
 
 .body-content-info-box-wrapper {
+    margin: 0;
+    padding: 0;
     position: relative;
-    display: inline-block;
+    display: block;
     width: 100%;
     background-color: #f3eff5;
+}
+
+.body-content-info-box-contents-buttons-wrapper {
+    position: relative;
+    background-color: rgb(80, 80, 80);
 }
 
 .body-content-info-box-contents-buttons {
@@ -1266,11 +1274,14 @@ span:nth-child(11) {
 }
 
 .body-content-info-box-contents-buttons > ul {
+    margin: 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .body-content-info-box-contents-buttons > ul > li {
@@ -1310,6 +1321,27 @@ span:nth-child(11) {
 .body-content-info-box-contents-button-info-grid {
     display: grid;
     position: relative;
+    padding: 20px;
+    grid-template-columns: 50%;
+    grid-template-rows: 100%;
+}
+
+.body-content-info-box-contents-info-grid-text-left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.body-content-info-box-contents-info-grid-img-right {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    background-image: url(images&videos/PICS/BaluarteBridge3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .body-content-info-box-contents-button-info-wrapper {
@@ -1326,33 +1358,28 @@ span:nth-child(11) {
 }
 
 .body-content-info-box-contents-button-info-img {
-    display: flex;
-    position: relative;
-    /* margin: 0 auto; */
-    padding: 20px;
-    padding-top: 60px;
-    justify-content: center;
-    /* transform: scale(2.8); */
+    
 }
 
+
 .body-content-info-box-contents-button-info-text {
-    
     padding: 10px;
 }
 
 .body-content-info-box-contents-button-info-text > h1 {
     font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    
-    font-size: 3.2rem;
-    text-decoration: underline 5px solid crimson;
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: crimson;
+    text-align: center;
+    text-decoration: underline 5px solid goldenrod;
 }
 
 .body-content-info-box-contents-button-info-text > p {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 /* Footer Styles */

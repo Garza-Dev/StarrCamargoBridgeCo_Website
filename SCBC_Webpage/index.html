@@ -11,6 +11,7 @@
 
     <!-- JQuery Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="webfuncs.js"></script>
 
     <!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -548,53 +549,53 @@
                     </div>
 
                     <div class="body-content-info-box-wrapper">
-                        <div class="body-content-info-box-contents-buttons">
-                            <ul>
-                                <li><button><img src="images&videos/icons/Truck.png">
-                                    <div class="body-content-info-box-contents-buttons-txt">
-                                        Baluarte Bridge
-                                    </div>
-                                </button></li>
-                                <li><button><img src="images&videos/icons/loop.png">
-                                    <div class="body-content-info-box-contents-buttons-txt">
-                                        Loop 195
-                                    </div>
-                                </button></li>
-                                <li><button><img src="images&videos/icons/auto.png">
-                                    <div class="body-content-info-box-contents-buttons-txt">
-                                        The Shortcut
-                                    </div>
-                                </button></li>
-                                <li><button><img src="images&videos/icons/demographics.png">
-                                    <div class="body-content-info-box-contents-buttons-txt">
-                                        Demographics
-                                    </div>
-                                </button></li>
-                                <li><button><img src="images&videos/icons/train.png">
-                                    <div class="body-content-info-box-contents-buttons-txt">
-                                        Border Pacific Railroad
-                                    </div>
-                                </button></li>
-                            </ul>
+                        <div class="body-content-info-box-contents-buttons-wrapper">
+                            <div class="body-content-info-box-contents-buttons">
+                                <ul>
+                                    <li><button onclick="baluarteBtn()"><img src="images&videos/icons/Truck.png">
+                                        <div class="body-content-info-box-contents-buttons-txt">
+                                            Baluarte Bridge
+                                        </div>
+                                    </button"></li>
+                                    <li><button onclick="loopBtn()"><img src="images&videos/icons/loop.png">
+                                        <div class="body-content-info-box-contents-buttons-txt">
+                                            Loop 195
+                                        </div>
+                                    </button></li>
+                                    <li><button onclick="shortcutBtn()"><img src="images&videos/icons/auto.png">
+                                        <div class="body-content-info-box-contents-buttons-txt">
+                                            The Shortcut
+                                        </div>
+                                    </button></li>
+                                    <li><button onclick="demoBtn()"><img src="images&videos/icons/demographics.png">
+                                        <div class="body-content-info-box-contents-buttons-txt">
+                                            Demographics
+                                        </div>
+                                    </button></li>
+                                    <li><button onclick="bopBtn()"><img src="images&videos/icons/train.png">
+                                        <div class="body-content-info-box-contents-buttons-txt">
+                                            Border Pacific Railroad
+                                        </div>
+                                    </button></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="body-content-info-box-contents-button-info-wrapper">
                             <div class="body-content-info-box-contents-button-info">
 
                                 <div class="body-content-info-box-contents-button-info-grid">
-                                    
-                                    <div class="body-content-info-box-contents-button-info-img">
-                                        <img src="images&videos/baluartebridge.jpg">
+                                    <div class="body-content-info-box-contents-info-grid-text-left">
+                                        <div class="body-content-info-box-contents-button-info-text">
+                                            <h1 id="infobox_txt_h1">Baluarte Bridge</h1>
+                                            <p id="infobox_txt_p"> The Mazatlán-Durango highway project is the last link in a transversal
+                                                inter-oceanic corridor connecting Mexico's Pacific Coast with the Gulf
+                                                of Mexico. Connecting Mexico's Pacific Coast with The Gulf of Mexico.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="body-content-info-box-contents-button-info-text">
-                                        <h1>Baluarte Bridge</h1>
-                                        <p> The Mazatlán-Durango highway project is the last link in a transversal
-                                            inter-oceanic corridor connecting Mexico's Pacific Coast with the Gulf
-                                            of Mexico.
-                                        </p>
+                                    <div class="body-content-info-box-contents-info-grid-img-right" id="bg_img_infobox">
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
