@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .body-container {
@@ -384,8 +385,9 @@ span:nth-child(11) {
 .body-MissionStatement-body-background {
     position: relative;
     height: 450px;
+    /* background: rgb(5,102,141); */
     background-image: url(images&videos/MS_background.jpg);
-    background-size: fill;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -398,7 +400,8 @@ span:nth-child(11) {
     line-height: 70px;
     text-align: center;
     font-style: italic;
-    color: #f3eff5;
+    color: crimson;
+    /* color: #f3eff5; */
     font-family: 'Playfair Display', serif;
     font-size: 1.8em;
     letter-spacing: 1.9px;
@@ -413,7 +416,8 @@ span:nth-child(11) {
     line-height: 20px;
     text-align: center;
     text-shadow: 0 0 1px black;
-    color: #f3eff5;
+    color: crimson;
+    /* color: #f3eff5; */
     font-family: 'Playfair Display', serif;
     font-size: 2.1em;
     letter-spacing: 2px;
@@ -798,10 +802,6 @@ span:nth-child(11) {
     display: block;
 }
 
-.carousel {
-    
-}
-
 .cell {
     position: relative;
     width: 22%;
@@ -860,7 +860,8 @@ span:nth-child(11) {
 }
 
 .body-customer-review-info-content-wrapper {
-    display: block; 
+    position: relative;
+    display: flex; 
     justify-content: center;
     min-height: 900px;
     padding-top: 30px;
@@ -1253,6 +1254,135 @@ span:nth-child(11) {
     }
 }
 
+/* Body Content Info Box */
+
+.body-content-info-box-wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #f3eff5;
+}
+
+.body-content-info-box-contents-buttons-wrapper {
+    position: relative;
+    background-color: rgb(80, 80, 80);
+}
+
+.body-content-info-box-contents-buttons {
+    position: relative;
+}
+
+.body-content-info-box-contents-buttons > ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.body-content-info-box-contents-buttons > ul > li {
+    display: flex;
+}
+
+.body-content-info-box-contents-buttons > ul > li > button {
+    display: block;
+    margin: 0;
+    height: auto;
+    width: 250px;
+    border-radius: 55px;
+    background-color: rgb(20,20,20);
+}
+
+.body-content-info-box-contents-buttons > ul > li > button:hover {
+    background-color: crimson;
+}
+
+.body-content-info-box-contents-buttons > ul > li > button:focus {
+    background-color: crimson;
+}
+
+.body-content-info-box-contents-buttons-txt {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #f3eff5;
+}
+
+.body-content-info-box-contents-buttons > ul > li > button > img {
+    padding: 2px;
+    width: auto;
+}
+
+.body-content-info-box-contents-button-info-grid {
+    display: grid;
+    position: relative;
+    padding: 20px;
+    grid-template-columns: 50%;
+    grid-template-rows: 100%;
+}
+
+.body-content-info-box-contents-info-grid-text-left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.body-content-info-box-contents-info-grid-img-right {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    background-image: url(images&videos/PICS/BaluarteBridge3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body-content-info-box-contents-button-info-wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.body-content-info-box-contents-button-info {
+    position: relative;
+    border: 5px solid rgb(20,20,20);
+    border-radius: 15px;
+}
+
+.body-content-info-box-contents-button-info-img {
+    
+}
+
+
+.body-content-info-box-contents-button-info-text {
+    padding: 10px;
+}
+
+.body-content-info-box-contents-button-info-text > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: crimson;
+    text-align: center;
+    text-decoration: underline 5px solid goldenrod;
+}
+
+.body-content-info-box-contents-button-info-text > p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 /* Footer Styles */
 
 .footer-page-wrapper {
@@ -1262,7 +1392,7 @@ span:nth-child(11) {
 .footer-page-background {
     display: flex;
     background-color: rgba(0, 0, 0, 0.699);
-    min-height: 900px;
+    min-height: 700px; 
 }
 
 .footer-info-container-wrapper {
