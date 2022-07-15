@@ -6,14 +6,8 @@ body {
 .body-container {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: #e5e5e5;
     /* background: linear-gradient(to bottom, rgb(5,102,141), aliceblue); */
-
-    background-image: url("images&videos/bridge_img1.JPG");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .body-wrapper {
@@ -365,28 +359,33 @@ span:nth-child(11) {
 .body-MissionStatement-header-background {
     position: relative;
     height: 75px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.423), rgb(216, 187, 112), goldenrod, rgba(0, 0, 0, 0.423));
+    background-color: #e5e5e5;
+    /* background: linear-gradient(to top, goldenrod, crimson); */
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.423), rgb(216, 187, 112), goldenrod, rgba(0, 0, 0, 0.423)); */
 }
 
 .body-MissionStatement-header-text {
     position: relative;
     padding-top: 25px;
     text-transform: uppercase;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
-    color: crimson;
+    /* color: crimson; */
+    color: #05668d;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 3em;
+    font-size: 3.5em;
     letter-spacing: 2px;
     font-weight: 800;
+    
 }
 
 .body-MissionStatement-body-background {
     position: relative;
     height: 450px;
     /* background: rgb(5,102,141); */
-    background-image: url(images&videos/MS_background.jpg);
+    background-color: #e5e5e5;
+    /* background-image: url(images&videos/MS_background.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -400,13 +399,13 @@ span:nth-child(11) {
     line-height: 70px;
     text-align: center;
     font-style: italic;
-    color: crimson;
-    /* color: #f3eff5; */
+    /* color: crimson; */
+    color: #05668d;
     font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
+    font-size: 2em;
     letter-spacing: 1.9px;
-    font-weight: 600;
-    text-shadow: 0 0 1px black;
+    font-weight: bold;
+    /* text-shadow: 0 0 1px black; */
 }
 
 .body-MissionStatement-body-footer-text {
@@ -415,7 +414,7 @@ span:nth-child(11) {
     text-transform: uppercase;
     line-height: 20px;
     text-align: center;
-    text-shadow: 0 0 1px black;
+    /* text-shadow: 0 0 1px black; */
     color: crimson;
     /* color: #f3eff5; */
     font-family: 'Playfair Display', serif;
@@ -493,6 +492,8 @@ span:nth-child(11) {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
+
+
 }
 
 .item1-header {
@@ -530,6 +531,8 @@ span:nth-child(11) {
 .item1-row-text {
     padding-top: 2px;
     text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -543,10 +546,13 @@ span:nth-child(11) {
 
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 15px;
+
+    border-top: solid 3px crimson;
 }
 
 .item2-header {
-    line-height: 30px;
+    line-height: 45px;
     text-align: center;
     color: goldenrod;
     font-weight: 800;
@@ -566,13 +572,19 @@ span:nth-child(11) {
 .item2-row-text {
     padding-top: 2px;
     text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
+
     font-size: 1.19em;
 }
 
 .item2-row-text-link > a {
     text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
+
     font-size: 1.19em;
     color: crimson;
 }
@@ -594,8 +606,9 @@ span:nth-child(11) {
 
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 15px;
 
-    border-left: solid 3px crimson;
+    border-top: solid 3px crimson;
 }
 
 .item3-header {
@@ -619,13 +632,19 @@ span:nth-child(11) {
 .item3-row-text {
     padding-top: 2px;
     text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
+
     font-size: 1.19em;
 }
 
 .item3-row-text-link > a {
     text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
+
     font-size: 1.19em;
     color: crimson;
 }
@@ -690,11 +709,12 @@ span:nth-child(11) {
 .item4-row-text {
     padding-top: 2px;
     text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
 }
 
 .body-info-grid-item5 {
-
     /*CargoVehicleHours*/
 
     grid-column-start: 2;
@@ -705,8 +725,6 @@ span:nth-child(11) {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
-
-    border-left: solid 3px crimson;
 }
 
 .item5-header {
@@ -754,6 +772,7 @@ span:nth-child(11) {
     padding-top: 2px;
     text-decoration: none;
     
+    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -761,7 +780,12 @@ span:nth-child(11) {
 
 .body-partners-info-wrapper {
     position: relative;
-    padding-top: 15px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 15px;
+    /* background-color: #e5e5e5; */
+    /* padding-top: 15px; */
 }
 
 .body-partners-info-header {
@@ -796,7 +820,7 @@ span:nth-child(11) {
 }
 
 .body-partners-img-carousel-contents {
-    background: linear-gradient(25deg, crimson, goldenrod);
+    /* background: linear-gradient(25deg, crimson, goldenrod); */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     display: block;
@@ -876,14 +900,15 @@ span:nth-child(11) {
 
 .body-customer-review-info-header-background {
     position: relative;
-    height: 70px;
-    background: linear-gradient(to bottom, #f3eff500, rgb(5,102,141));
+    height: 90px;
+    /* background: linear-gradient(to top, rgb(5, 102, 141), rgba(5, 102, 141, 0)); */
+    background-color: rgb(5,102,141);
 }
 
 .body-customer-review-info-header-text {
     text-align: center;
     text-transform: uppercase;
-    line-height: 20px;
+    line-height: 90px;
     color: #f3eff5;
     font-weight: 800;
     font-family: 'Oswald', sans-serif;
@@ -1262,12 +1287,13 @@ span:nth-child(11) {
     position: relative;
     display: block;
     width: 100%;
-    background-color: #f3eff5;
+    background-color: #e5e5e5;
 }
 
 .body-content-info-box-contents-buttons-wrapper {
     position: relative;
-    background-color: rgb(80, 80, 80);
+    /* background: linear-gradient(to bottom, rgb(5, 102, 141), #e5e5e5); */
+    background: rgb(20,20,20);
 }
 
 .body-content-info-box-contents-buttons {
@@ -1296,6 +1322,7 @@ span:nth-child(11) {
     width: 250px;
     border-radius: 55px;
     background-color: rgb(20,20,20);
+    border: 5px solid crimson;
 }
 
 .body-content-info-box-contents-buttons > ul > li > button:hover {
@@ -1340,7 +1367,7 @@ span:nth-child(11) {
     grid-row-start: 1;
     grid-row-end: 1;
 
-    background-image: url(images&videos/PICS/BaluarteBridge3.jpg);
+    background-image: url(images&videos/PICS/BaluarteBridge.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1371,9 +1398,9 @@ span:nth-child(11) {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 3.4rem;
-    color: crimson;
+    color: goldenrod;
     text-align: center;
-    text-decoration: underline 5px solid goldenrod;
+    /* text-decoration: underline 5px solid goldenrod; */
 }
 
 .body-content-info-box-contents-button-info-text > p {
@@ -1387,6 +1414,12 @@ span:nth-child(11) {
 
 .footer-page-wrapper {
     position: relative;
+    background-image: url("images&videos/bridge_img1.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-page-background {
