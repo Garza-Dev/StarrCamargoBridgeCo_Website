@@ -5,13 +5,31 @@
     <meta charset="utf-8" />
     <title>Starr Camargo Bridge: Puente Rio Grande</title>
 
-    <!-- The style of the webpage-->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Styles of Webpage-->
+    <link rel="stylesheet" href="styles/arrow-style.css">
+    <link rel="stylesheet" href="styles/body-main-infobox-style.css">
+    <link rel="stylesheet" href="styles/body-style.css">
+    <link rel="stylesheet" href="styles/btns+infobox-style.css">
+    <link rel="stylesheet" href="styles/customer-rev-style.css">
+    <link rel="stylesheet" href="styles/dropdown-menu-style.css">
+    <link rel="stylesheet" href="styles/footer-style.css">
+    <link rel="stylesheet" href="styles/mission-statement-style.css">
+    <link rel="stylesheet" href="styles/navbar-icons-style.css">
+    <link rel="stylesheet" href="styles/navbar-style.css">
+    <link rel="stylesheet" href="styles/page-video-style.css">
+    <link rel="stylesheet" href="styles/partners-style.css">
+    <link rel="stylesheet" href="styles/scbc-top-header-style.css">
+    <link rel="stylesheet" href="styles/wavy-text.css">
+
+    <!-- Useful Link -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- JQuery Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="webfuncs.js"></script>
+
+    <!-- JavaScript Functions-->
+    <script src="hours-infobox-funcs.js"></script>
+    <script src="misc-infobox-funcs.js"></script>
 
     <!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +48,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="SetBtnsOnPageLoad_HourInfoSection()">
     <div class="body-container">
 
         <div class="navbar-wrapper">
@@ -146,17 +164,17 @@
                         <div class="body-header1-text">
                            <!-- - Starr Camargo Bridge Co. - Rio Grande City, Texas - -->
 
-                           <span>-</span>
-                           <span>Starr</span>
-                           <span>Camargo</span>
-                           <span>Bridge</span>
-                           <span>Co.</span>
-                           <span>-</span>
-                           <span>Rio</span>
-                           <span>Grande</span>
-                           <span>City,</span>
-                           <span>Texas</span>
-                           <span>-</span>
+                           <span class="topheader">-</span>
+                           <span class="topheader">Starr</span>
+                           <span class="topheader">Camargo</span>
+                           <span class="topheader">Bridge</span>
+                           <span class="topheader">Co.</span>
+                           <span class="topheader">-</span>
+                           <span class="topheader">Rio</span>
+                           <span class="topheader">Grande</span>
+                           <span class="topheader">City,</span>
+                           <span class="topheader">Texas</span>
+                           <span class="topheader">-</span>
 
                         </div>
                     </div>
@@ -200,18 +218,144 @@
                 <div class="body-info-wrapper">
 
                     <div class="body-toll-info">
+
+                        <div onload="WhiteBorderBottom()" class="body-toll-info-subheaders-wrapper">
+                            <div class="body-toll-info-subheaders-container">
+                                <div class="body-toll-info-subheaders-button-container">
+                                    <div class="body-toll-info-subheaders-buttons">
+                                        <button onclick="HrsOfOpBtn()" id="HoursOpBtn">
+                                            <p>
+                                                <div class="wavy" id="wavyPHoursOp">
+                                                    <span style="--i:1">H</span>
+                                                    <span style="--i:2">o</span>
+                                                    <span style="--i:3">u</span>
+                                                    <span style="--i:4">r</span>
+                                                    <span style="--i:5">s</span>
+                                                    <span style="--i:6"> </span>
+                                                    <span style="--i:7">O</span>
+                                                    <span style="--i:8">f</span>
+                                                    <span style="--i:9"> </span>
+                                                    <span style="--i:10">O</span>
+                                                    <span style="--i:11">p</span>
+                                                    <span style="--i:12">e</span>
+                                                    <span style="--i:13">r</span>
+                                                    <span style="--i:14">a</span>
+                                                    <span style="--i:15">t</span>
+                                                    <span style="--i:16">i</span>
+                                                    <span style="--i:17">o</span>
+                                                    <span style="--i:18">n</span>
+                                                </div>
+                                            </p>
+                                            <p id="nonwavyPHoursOp">Hours Of Operation</p>
+                                            </button>
+                                        <button onclick="CrgHrsBtn()" id="CargoHrBtn">
+                                            <p>
+                                                <div class="wavy" id="wavyPCargoHr">
+                                                    <span style="--i:1">C</span>
+                                                    <span style="--i:2">a</span>
+                                                    <span style="--i:3">r</span>
+                                                    <span style="--i:4">g</span>
+                                                    <span style="--i:5">o</span>
+                                                    <span style="--i:6"> </span>
+                                                    <span style="--i:7">V</span>
+                                                    <span style="--i:8">e</span>
+                                                    <span style="--i:9">h</span>
+                                                    <span style="--i:10">i</span>
+                                                    <span style="--i:11">c</span>
+                                                    <span style="--i:12">l</span>
+                                                    <span style="--i:13">e</span>
+                                                    <span style="--i:14"> </span>
+                                                    <span style="--i:15">H</span>
+                                                    <span style="--i:16">o</span>
+                                                    <span style="--i:17">u</span>
+                                                    <span style="--i:18">r</span>
+                                                    <span style="--i:19">s</span>
+                                                </div>
+                                            </p>
+                                            <p id="nonwavyPCargoHr">Cargo Vehicle Hours</p>
+                                        </button>
+                                        <button onclick="FrSchBtn()" id="FareSchBtn">
+                                            <p>
+                                                <div class="wavy" id="wavyPFareSch">
+                                                    <span style="--i:1">F</span>
+                                                    <span style="--i:2">a</span>
+                                                    <span style="--i:3">r</span>
+                                                    <span style="--i:4">e</span>
+                                                    <span style="--i:5"> </span>
+                                                    <span style="--i:6">S</span>
+                                                    <span style="--i:7">c</span>
+                                                    <span style="--i:8">h</span>
+                                                    <span style="--i:9">e</span>
+                                                    <span style="--i:10">d</span>
+                                                    <span style="--i:11">u</span>
+                                                    <span style="--i:12">l</span>
+                                                    <span style="--i:13">e</span>
+                                                    <span style="--i:14">s</span>
+                                                </div>
+                                            </p>
+                                            <p id="nonwavyPFareSch">Fare Schedules</p>
+                                        </button>
+                                        <button onclick="PermItsBtn()" id="PermItsBtn">
+                                            <p>
+                                                <div class="wavy" id="wavyPPermIts">
+                                                    <span style="--i:1">P</span>
+                                                    <span style="--i:2">e</span>
+                                                    <span style="--i:3">r</span>
+                                                    <span style="--i:4">m</span>
+                                                    <span style="--i:5">i</span>
+                                                    <span style="--i:6">t</span>
+                                                    <span style="--i:7">t</span>
+                                                    <span style="--i:8">e</span>
+                                                    <span style="--i:9">d</span>
+                                                    <span style="--i:10"> </span>
+                                                    <span style="--i:11">I</span>
+                                                    <span style="--i:12">t</span>
+                                                    <span style="--i:13">e</span>
+                                                    <span style="--i:14">m</span>
+                                                    <span style="--i:15">s</span>
+                                                </div>
+                                            </p>
+                                            <p id="nonwavyPPermIts">Permitted Items</p>
+                                        </button>
+                                        <button onclick="ProhItsBtn()" id="ProhItsBtn">
+                                            <p>
+                                                <div class="wavy" id="wavyPProhIts">
+                                                    <span style="--i:1">P</span>
+                                                    <span style="--i:2">r</span>
+                                                    <span style="--i:3">o</span>
+                                                    <span style="--i:4">h</span>
+                                                    <span style="--i:5">i</span>
+                                                    <span style="--i:6">b</span>
+                                                    <span style="--i:7">i</span>
+                                                    <span style="--i:8">t</span>
+                                                    <span style="--i:9">e</span>
+                                                    <span style="--i:10">d</span>
+                                                    <span style="--i:11"> </span>
+                                                    <span style="--i:12">I</span>
+                                                    <span style="--i:13">t</span>
+                                                    <span style="--i:14">e</span>
+                                                    <span style="--i:15">m</span>
+                                                    <span style="--i:16">s</span>
+                                                </div>
+                                            </p>
+                                            <p id="nonwavyPProhIts">Prohibited Items</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <div class="body-info-grid-container">
-                            <div class="body-info-grid-item1">
-                                <div class="body-info-grid-item1-wrapper">
-                                    <div class="item1-header">
-                                        <!-- <i class="material-icons" id="time_icon">access_time</i> -->
+                        <div class="body-toll-info-box-container">
+
+                            <div class="body-toll-info-box-contents">
+                                <div class="body-toll-info-box-wrapper">
+                                    <div class="body-toll-info-box-header" id="BodyTollInfoBoxHeader">
                                         Hours Of Operation
                                     </div>
-                                    <div class="item1-contents">
+                                    <div class="item1-body-toll-info-box">
                                         <div class="item1-col1-header">
-                                            <div class="item1-col1-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                Main Office
+                                            <div class="item1-col1-header-text">
+                                               - Main Office -
                                             </div>
                                             <div class="item1-row-text">
                                                 Monday - Friday
@@ -227,8 +371,8 @@
                                             </div>
                                         </div>
                                         <div class="item1-col2-header">
-                                            <div class="item1-col2-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                Bridge Operation Hours
+                                            <div class="item1-col2-header-text">
+                                               - Starr Camargo Bridge -
                                             </div>
                                             <div class="item1-row-text">
                                                 Monday - Sunday
@@ -246,11 +390,10 @@
                                     </div>
                                 </div>
                             </div>
-
+<!-- 
                             <div class="body-info-grid-item2">
                                 <div class="body-info-grid-item2-wrapper">
                                     <div class="item2-header">
-                                        <!-- <img src="images&videos/icons/Lista.png" id="check_icon"/> -->
                                         Permitted Items
                                     </div>
                                     <div class="item2-contents">
@@ -279,7 +422,6 @@
                             <div class="body-info-grid-item3">
                                 <div class="body-info-grid-item3-wrapper">
                                     <div class="item3-header">
-                                        <!-- <img src="images&videos/icons/ListaX.png" id="cross_icon"/> -->
                                         Prohibited Items
                                     </div>
                                     <div class="item3-contents">
@@ -454,20 +596,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
 
                     </div>
 
-                    <div class="body-partners-info-wrapper">
-
-                        <!-- <div class="body-partners-info-header">
-                            <div class="body-partners-info-header-text">
-                                Our Partners
-                            </div>
-                        </div> -->
-                        
+                    <div class="body-partners-info-wrapper">  
                         <div class="body-partners-info-content">
 
                             <div class="body-partners-img-carousel-wrapper">
@@ -684,6 +819,25 @@
             wrapAround: true,
             freeScroll: true
         });
+    </script>
+    <script>
+        function SetBtnsOnPageLoad_HourInfoSection() {
+
+            //Sets the Hours of Operation Btn as true
+            document.getElementById("HoursOpBtn").style.borderBottomColor = "white";
+            document.getElementById("HoursOpBtn").style.transform = "translateY(2px)";
+
+            //Removes Wavy Text of Other Buttons
+            document.getElementById("nonwavyPHoursOp").hidden = true;
+            document.getElementById("wavyPCargoHr").style.display = "none";
+            document.getElementById("nonwavyPCargoHr").hidden = false;
+            document.getElementById("wavyPFareSch").style.display = "none";
+            document.getElementById("nonwavyPFareSch").hidden = false;
+            document.getElementById("wavyPPermIts").style.display = "none";
+            document.getElementById("nonwavyPPermIts").hidden = false;
+            document.getElementById("wavyPProhIts").style.display = "none";
+            document.getElementById("nonwavyPProhIts").hidden = false;
+        }
     </script>
 </body>
 </html>

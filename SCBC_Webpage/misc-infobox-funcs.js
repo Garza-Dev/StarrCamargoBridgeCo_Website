@@ -1,3 +1,5 @@
+//Info Box Button Functions
+
 function baluarteBtn() {
     document.getElementById("bg_img_infobox").style.backgroundImage = "url(images&videos/PICS/BaluarteBridge.png)";
     document.getElementById("infobox_txt_h1").textContent = "Baluarte Bridge";

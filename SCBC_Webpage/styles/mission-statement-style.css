@@ -1,0 +1,66 @@
+.body-MissionStatement-wrapper {
+    position: relative;
+}
+
+.body-MissionStatement-header-background {
+    position: relative;
+    height: 75px;
+    background-color: #fdfdfd;
+}
+
+.body-MissionStatement-header-text {
+    position: relative;
+    padding-top: 25px;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+    /* color: crimson; */
+    color: #05668d;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    font-weight: 800;
+    
+}
+
+.body-MissionStatement-body-background {
+    position: relative;
+    height: 450px;
+    background-color: #fdfdfd;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-MissionStatement-body-text {
+    position: relative;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: uppercase;
+    line-height: 70px;
+    text-align: center;
+    font-style: italic;
+    /* color: crimson; */
+    color: #05668d;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    letter-spacing: 1.9px;
+    font-weight: bold;
+    /* text-shadow: 0 0 1px black; */
+}
+
+.body-MissionStatement-body-footer-text {
+    position: relative;
+    padding-top: 40px; 
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+    /* text-shadow: 0 0 1px black; */
+    color: crimson;
+    /* color: #f3eff5; */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1em;
+    letter-spacing: 2px;
+    font-weight: 700;
+}

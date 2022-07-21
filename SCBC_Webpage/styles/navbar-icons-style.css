@@ -1,0 +1,39 @@
+  .social-btns .fa-facebook {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 40px;
+    height: 28px;
+    color: #3b5999;
+    background-color: white;
+    padding-top: 12px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+  
+.social-btns .fa-facebook:hover {
+    color: #ffffff;
+    background-color: #3b5999;
+}
+
+.social-btns .fa-envelope {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 40px;
+    height: 28px;
+    color: crimson;
+    background-color: white;
+    padding-top: 12px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+  
+.social-btns .fa-envelope:hover {
+    color: #ffffff;
+    background-color: crimson;
+}

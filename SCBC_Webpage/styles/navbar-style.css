@@ -1,0 +1,116 @@
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    /* background-color: rgb(5,102,141); */
+    background-color: white;
+}
+
+.navbar-info-left {
+    position: absolute;
+    float: left;
+    width:  25%;
+    height: 10%;
+    left: 25px;
+    top: 110px;
+}
+
+.navbar-info-left-text {
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    color: #05668d;
+    justify-self: left;
+}
+
+.navbar-info-right {
+    position: absolute;
+    float: right;
+    width: 10%;
+    height: 10%;
+    right: 0px;
+    margin-top: 95px;
+    /* background-color: rgb(5,102,141); */
+}
+
+.right-side {
+   display: flex;
+}
+
+.navbar-wrapper > .right-side > div {
+    padding: 1rem;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.navbar-link-wrapper {  
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    max-height: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.navbar-link-wrapper > a {
+    /* color: #e5e5e5; */
+    color: rgb(5,102,141);
+    position: relative;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.navbar-link-wrapper-haschildren > a {
+    /* color: #e5e5e5; */
+    color: rgb(5,102,141);
+    position: relative;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-family: 'Varela Round', sans-serif;
+}
+  
+.navbar-link-wrapper > a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 4px;
+    background-color: crimson;;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navbar-link-wrapper-haschildren > a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 4px;
+    background-color: crimson;;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.navbar-link-wrapper > a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navbar-link-wrapper-haschildren > a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}

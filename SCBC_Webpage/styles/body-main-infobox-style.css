@@ -1,0 +1,375 @@
+.body-toll-info {
+    /* text-align: center; */
+    position: relative;
+    padding-bottom: 45px;
+    height: 750px;
+}
+
+.body-toll-info-subheaders-wrapper {
+    background: linear-gradient(to bottom, white, rgba(20, 20, 20, 0.193));
+    padding-top: 15px;
+    margin: 0;
+}
+
+.body-toll-info-subheaders-container {
+    
+}
+
+.body-toll-info-subheaders-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.body-toll-info-subheaders-buttons > button {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 8px;
+    background-color: white;
+}
+
+#HoursOpBtn {
+    height: 68px;
+    width: auto;
+    /* border-bottom: white; */
+}
+
+#CargoHrBtn {
+    height: 56px;
+    width: auto;
+    transform: translateY(12px);
+    background-color: rgb(209, 209, 209);
+}
+
+#FareSchBtn {
+    height: 56px;
+    width: auto;
+    transform: translateY(12px);
+    background-color: rgb(209, 209, 209);
+}
+
+#PermItsBtn {
+    height: 56px;
+    width: auto;
+    transform: translateY(12px);
+    background-color: rgb(209, 209, 209);
+}
+
+#ProhItsBtn {
+    height: 56px;
+    width: auto;
+    transform: translateY(12px);
+    background-color: rgb(209, 209, 209);
+}
+
+.body-toll-info-subheaders-buttons > button > p {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.body-toll-info-box-container {
+    display: grid;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 650px;
+    padding-top: 25px;
+}
+
+.body-toll-info-box-contents {
+    padding: 15px;
+}
+
+.body-toll-info-box-header {
+    text-align: center;
+    line-height: 40px;
+    color: goldenrod;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.95em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.body-toll-info-box-contents {
+    /* display: grid;
+    grid-template-columns: 1.5fr 1.5fr; */
+    text-align: center;
+    margin-left: 290px;
+    margin-right: 290px;
+    
+    /* background-color: #05668d; */
+}
+
+.item1-col1-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    
+}
+
+.item1-col1-header-text {
+    font-size: 1.5em;
+}
+
+.item1-col2-header {
+    border-top: solid 3px black;
+    padding-top: 30px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-size: 1.6em;
+}
+
+.item1-col2-header-text {
+    font-size: 1.5em;
+}
+
+.item1-row-text {
+    padding-top: 2px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.body-info-grid-item2 {
+    /*Permitted Items*/
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+
+    border-top: solid 3px crimson;
+}
+
+.item2-header {
+    line-height: 45px;
+    text-align: center;
+    color: goldenrod;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.95em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.item2-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item2-row-text {
+    padding-top: 2px;
+    text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
+    font-size: 1.19em;
+}
+
+.item2-row-text-link > a {
+    text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
+    font-size: 1.19em;
+    color: crimson;
+}
+
+.item2-row-text-link {
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.body-info-grid-item3 {
+    /*Prohibited Items*/
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+
+    border-top: solid 3px crimson;
+}
+
+.item3-header {
+    line-height: 45px;
+    text-align: center;
+    color: goldenrod;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.95em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.item3-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item3-row-text {
+    padding-top: 2px;
+    text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
+    font-size: 1.19em;
+}
+
+.item3-row-text-link > a {
+    text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
+    font-size: 1.19em;
+    color: crimson;
+}
+
+.item3-row-text-link {
+    text-align: center;
+    padding-top: 8px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.body-info-grid-item4 {
+    /*Fare Schedules*/
+
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+
+    border-left: solid 3px crimson;
+}
+
+.item4-header {
+    line-height: 45px;
+    text-align: center;
+    color: goldenrod;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.95em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.item4-contents {
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.item4-col1-header {
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.19em;
+}
+
+.item4-col2-header {
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.19em;
+}
+
+.item4-row-text {
+    padding-top: 2px;
+    text-decoration: none;
+
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.body-info-grid-item5 {
+    /*CargoVehicleHours*/
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.item5-header {
+    text-align: center;
+    line-height: 45px;
+    color: goldenrod;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.95em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.item5-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item5-col1-header {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.13em;
+    border-right: 1px solid crimson;
+    padding-right: 2px;
+    
+}
+
+.item5-col2-header {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.13em;
+}
+
+.item5-col3-header {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.13em;
+    border-left: 1px solid crimson;
+    padding-left: 2px;
+}
+
+.item5-row-text {
+    padding-top: 2px;
+    text-decoration: none;
+    
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+}

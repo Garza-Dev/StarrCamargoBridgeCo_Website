@@ -1,0 +1,10 @@
+.body-header-video {
+    display: flex;
+}
+
+#background-video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%
+}

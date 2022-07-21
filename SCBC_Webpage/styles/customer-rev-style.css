@@ -1,0 +1,399 @@
+.body-customer-review-info-wrapper {
+    position: relative;
+}
+
+.body-customer-review-info-content-wrapper {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    min-height: 900px;
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background: rgb(5,102,141);
+}
+
+.body-customer-review-info-header-wrapper {
+    position: relative;
+}
+
+.body-customer-review-info-header-background {
+    position: relative;
+    height: 90px;
+    /* background: linear-gradient(to top, rgb(5, 102, 141), rgba(5, 102, 141, 0)); */
+    background-color: rgb(5,102,141);
+}
+
+.body-customer-review-info-header-text {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 90px;
+    color: #f3eff5;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    letter-spacing: 1.8px;
+    text-shadow: 0 0 1px black;
+}
+
+.body-customer-review-info-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+
+.body-customer-review-info-cards-container {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.body-customer-review-info-content-right {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.body-customer-review-info-right-text > p {
+    color: #f3eff5;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.body-customer-review-info-right-text > h1 {
+    color: rgb(5,102,141);
+    background-color: #f3eff5;
+    border-radius: 20px;
+    border: 8px solid #f3eff5;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
+.body-customer-review-info-cards-container {
+    border-right: 2px solid #f3eff5;
+}
+
+/* Body Info Cus. Rev. Card 1 Styles */
+
+.body-customer-review-card1 {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    padding: 8px;
+}
+
+.body-customer-review-card1:hover #TERESA_LOGO {
+    top: 80%;
+    animation-play-state: paused;
+}
+
+.body-customer-review-card1:hover #TERESA_VID {
+    left: 90%;
+    top: 40%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.body-customer-review-card1 .card1-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.body-customer-review-card1 .card1-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3eff5;
+    clip-path: circle(75px at center);
+    transition: 0.5s;
+}
+
+.body-customer-review-card1:hover .card1-circle:before {
+    background: rgba(80, 80, 80, 0.8);
+    clip-path: circle(400px at center);
+}
+
+#TERESA_VID {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 350px;
+    min-height: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transform: translate(-65%, -60%);
+    pointer-events: none;
+    transition: 0.9s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#TERESA_LOGO {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -60%);
+    pointer-events: none;
+    transition: 0.5s;
+    animation: bounce1 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce1 { 
+    0% {
+        transform: translate(-65%, -60%) translateY(0);
+    }
+    100% {
+        transform: translate(-65%, -60%) translateY(-15px);
+    }
+}
+
+.body-customer-review-card1 .card1-content {
+    position: relative;
+    width: 50%;
+    bottom: 20%;
+    padding: 10px 10px 10px 30px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card1-content-text {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card1-text-footer {
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card1-content-link {
+    text-align: center;
+}
+
+.card1-content-link > a {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 580;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    background: crimson;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.body-customer-review-card1:hover .card1-content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 991px) {
+    .body-customer-review-card1 {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .body-customer-review-card1:hover {
+        height: 600px;
+    }
+    .body-customer-review-card1 .card1-content {
+        width: 100%;
+        top: 5%;
+        left: 0;
+        padding: 40px; 
+    }
+    .body-customer-review-card1:hover #TERESA_VID {
+        top: 70%;
+        left: 57%;
+    }
+}
+
+/* Body Info Cus. Rev. Card 2 Styles */
+
+.body-customer-review-card2 {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    padding: 8px;
+}
+
+.body-customer-review-card2:hover #EXCOMEX_LOGO {
+    top: 80%;
+    animation-play-state: paused;
+}
+
+.body-customer-review-card2:hover #EXCOMEX_VID {
+    left: 90%;
+    top: 40%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.body-customer-review-card2 .card2-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.body-customer-review-card2 .card2-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3eff5;
+    clip-path: circle(75px at center);
+    transition: 0.5s;
+}
+
+.body-customer-review-card2:hover .card2-circle:before {
+    background: rgba(80, 80, 80, 0.8);
+    clip-path: circle(400px at center);
+}
+
+#EXCOMEX_VID {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 350px;
+    min-height: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transform: translate(-65%, -60%);
+    pointer-events: none;
+    transition: 0.9s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#EXCOMEX_LOGO {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -65%);
+    pointer-events: none;
+    transition: 0.5s;
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce { 
+    0% {
+        transform: translate(-80%, -65%) translateY(0);
+    }
+    100% {
+        transform: translate(-80%, -65%) translateY(-20px);
+    }
+}
+
+.body-customer-review-card2 .card2-content {
+    position: relative;
+    width: 50%;
+    bottom: 20%;
+    padding: 10px 10px 10px 30px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card2-content-text {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card2-text-footer {
+    color: #fff;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card2-content-link {
+    text-align: center;
+}
+
+.card2-content-link > a {
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 580;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    background: crimson;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.body-customer-review-card2:hover .card2-content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 991px) {
+    .body-customer-review-card2 {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .body-customer-review-card2:hover {
+        height: 600px;
+    }
+    .body-customer-review-card2 .card2-content {
+        width: 100%;
+        top: 5%;
+        left: 0;
+        padding: 40px; 
+    }
+    .body-customer-review-card2:hover #TERESA_VID {
+        top: 70%;
+        left: 57%;
+    }
+}
