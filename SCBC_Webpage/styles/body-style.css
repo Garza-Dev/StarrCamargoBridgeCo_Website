@@ -1,11 +1,11 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
 }
 
 .body-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
 
     background-image: url("../images&videos/bridge_img1.JPG");
     min-height: 500px;

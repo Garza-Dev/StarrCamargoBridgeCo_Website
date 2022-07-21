@@ -21,6 +21,9 @@ function HrsOfOpBtn() {
 
     //Change InfoBox Header Text
     ChangeInfoBoxHeader();
+
+    //Change InfoBox Content to HrsOfOp
+    ChangeInfoBox_HoursOfOp();
 }
 
 function CrgHrsBtn() {
@@ -36,6 +39,9 @@ function CrgHrsBtn() {
 
     //Change InfoBox Header Text
     ChangeInfoBoxHeader();
+
+    //Change InfoBox Content to CargoVh
+    ChangeInfoBox_CargoVh();
 }
 
 function FrSchBtn() {
@@ -51,6 +57,9 @@ function FrSchBtn() {
 
     //Change InfoBox Header Text
     ChangeInfoBoxHeader();
+
+    //Change InfoBox Content to FareSch
+    ChangeInfoBox_FareSch();
 }
 
 function PermItsBtn() {
@@ -66,6 +75,9 @@ function PermItsBtn() {
 
     //Change InfoBox Header Text
     ChangeInfoBoxHeader();
+
+    //Change InfoBox Content to PermIts
+    ChangeInfoBox_PermIts();
 }
 
 function ProhItsBtn() {
@@ -81,6 +93,9 @@ function ProhItsBtn() {
 
     //Change InfoBox Header Text
     ChangeInfoBoxHeader();
+
+    //Change InfoBox Content to ProhIts
+    ChangeInfoBox_ProhIts();
 }
 
 function ChangeAllButtons() {
@@ -232,4 +247,64 @@ function ChangeInfoBoxHeader() {
     {
         document.getElementById("BodyTollInfoBoxHeader").textContent = "Prohibited Items"
     }
+}
+
+function ChangeInfoBox_HoursOfOp() {
+    //Margins
+    document.getElementById("BodyTollInfoBoxContents").style.marginLeft = "290px";
+    document.getElementById("BodyTollInfoBoxContents").style.marginRight = "290px";
+
+    document.getElementById("BodyTollInfoBoxHoursOp").hidden = false;
+    document.getElementById("BodyTollInfoBoxCargoVh").hidden = true;
+    document.getElementById("BodyTollInfoBoxFareSch").hidden = true;
+    document.getElementById("BodyTollInfoBoxPermIts").hidden = true;
+    document.getElementById("BodyTollInfoBoxProhIts").hidden = true;
+}
+
+function ChangeInfoBox_CargoVh() {
+    //Margins
+    document.getElementById("BodyTollInfoBoxContents").style.marginLeft = "0";
+    document.getElementById("BodyTollInfoBoxContents").style.marginRight = "0";
+
+    document.getElementById("BodyTollInfoBoxHoursOp").hidden = true;
+    document.getElementById("BodyTollInfoBoxCargoVh").hidden = false;
+    document.getElementById("BodyTollInfoBoxFareSch").hidden = true;
+    document.getElementById("BodyTollInfoBoxPermIts").hidden = true;
+    document.getElementById("BodyTollInfoBoxProhIts").hidden = true;
+}
+
+function ChangeInfoBox_FareSch() {
+    //Margins
+    document.getElementById("BodyTollInfoBoxContents").style.marginLeft = "0";
+    document.getElementById("BodyTollInfoBoxContents").style.marginRight = "0";
+
+    document.getElementById("BodyTollInfoBoxHoursOp").hidden = true;
+    document.getElementById("BodyTollInfoBoxCargoVh").hidden = true;
+    document.getElementById("BodyTollInfoBoxFareSch").hidden = false;
+    document.getElementById("BodyTollInfoBoxPermIts").hidden = true;
+    document.getElementById("BodyTollInfoBoxProhIts").hidden = true;
+}
+
+function ChangeInfoBox_PermIts() {
+    //Margins
+    document.getElementById("BodyTollInfoBoxContents").style.marginLeft = "0";
+    document.getElementById("BodyTollInfoBoxContents").style.marginRight = "0";
+
+    document.getElementById("BodyTollInfoBoxHoursOp").hidden = true;
+    document.getElementById("BodyTollInfoBoxCargoVh").hidden = true;
+    document.getElementById("BodyTollInfoBoxFareSch").hidden = true;
+    document.getElementById("BodyTollInfoBoxPermIts").hidden = false;
+    document.getElementById("BodyTollInfoBoxProhIts").hidden = true;
+}
+
+function ChangeInfoBox_ProhIts() {
+    //Margins
+    document.getElementById("BodyTollInfoBoxContents").style.marginLeft = "0";
+    document.getElementById("BodyTollInfoBoxContents").style.marginRight = "0";
+
+    document.getElementById("BodyTollInfoBoxHoursOp").hidden = true;
+    document.getElementById("BodyTollInfoBoxCargoVh").hidden = true;
+    document.getElementById("BodyTollInfoBoxFareSch").hidden = true;
+    document.getElementById("BodyTollInfoBoxPermIts").hidden = true;
+    document.getElementById("BodyTollInfoBoxProhIts").hidden = false;
 }

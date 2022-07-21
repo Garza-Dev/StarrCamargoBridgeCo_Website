@@ -1,4 +1,5 @@
 .body-toll-info {
+    margin: 0;
     /* text-align: center; */
     position: relative;
     padding-bottom: 45px;
@@ -64,7 +65,7 @@
 .body-toll-info-subheaders-buttons > button > p {
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .body-toll-info-box-container {
@@ -94,13 +95,7 @@
 }
 
 .body-toll-info-box-contents {
-    /* display: grid;
-    grid-template-columns: 1.5fr 1.5fr; */
     text-align: center;
-    margin-left: 290px;
-    margin-right: 290px;
-    
-    /* background-color: #05668d; */
 }
 
 .item1-col1-header {
@@ -121,7 +116,6 @@
     padding-top: 30px;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
-    /* font-family: 'Varela Round', sans-serif; */
     font-size: 1.6em;
 }
 
@@ -165,32 +159,27 @@
 .item2-contents {
     display: grid;
     grid-template-columns: 1fr;
+    padding-top: 80px;
+    text-align: center;
 }
 
 .item2-row-text {
     padding-top: 2px;
     text-decoration: none;
-
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
-
-    font-size: 1.19em;
+    font-size: 2.1em;
 }
 
 .item2-row-text-link > a {
     text-decoration: none;
-
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
-
-    font-size: 1.19em;
+    font-size: 2.1em;
     color: crimson;
 }
 
 .item2-row-text-link {
     text-align: center;
     padding-top: 8px;
-    margin-left: 10px;
     position: relative;
 }
 
@@ -225,32 +214,27 @@
 .item3-contents {
     display: grid;
     grid-template-columns: 1fr;
+    padding-top: 80px;
+    text-align: center;
 }
 
 .item3-row-text {
     padding-top: 2px;
     text-decoration: none;
-
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
-
-    font-size: 1.19em;
+    font-size: 2.1em;
 }
 
 .item3-row-text-link > a {
     text-decoration: none;
-
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
-
-    font-size: 1.19em;
+    font-size: 2.1em;
     color: crimson;
 }
 
 .item3-row-text-link {
     text-align: center;
     padding-top: 8px;
-    margin-left: 15px;
     position: relative;
 }
 
@@ -284,31 +268,38 @@
 
 .item4-contents {
     display: inline-flex;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: 1.5fr 1.5fr;
+    column-gap: 90px;
+    padding-top: 20px;
 }
 
 .item4-col1-header {
     display: inline-block;
     text-align: left;
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.19em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+}
+
+.item4-col1-header-text {
+    font-size: 1.5em;
 }
 
 .item4-col2-header {
     display: inline-block;
     text-align: right;
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.19em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+}
+
+.item4-col2-header-text {
+    font-size: 1.5em;
 }
 
 .item4-row-text {
     padding-top: 2px;
     text-decoration: none;
-
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -341,35 +332,45 @@
 .item5-contents {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    padding-top: 120px;
 }
 
 .item5-col1-header {
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.13em;
-    border-right: 1px solid crimson;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    border-right: solid 3px black;
     padding-right: 2px;
-    
+}
+
+.item5-col1-header-text {
+    font-size: 1.5em;
 }
 
 .item5-col2-header {
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.13em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+}
+
+.item5-col2-header-text {
+    font-size: 1.5em;
 }
 
 .item5-col3-header {
     text-decoration: none;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 1.13em;
-    border-left: 1px solid crimson;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    border-left: solid 3px black;
     padding-left: 2px;
+}
+
+.item5-col3-header-text {
+    font-size: 1.5em;
 }
 
 .item5-row-text {
     padding-top: 2px;
-    text-decoration: none;
-    
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Varela Round', sans-serif;
 }

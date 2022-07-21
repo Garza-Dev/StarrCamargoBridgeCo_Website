@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/scbc-top-header-style.css">
     <link rel="stylesheet" href="styles/wavy-text.css">
 
-    <!-- Useful Link -->
+    <!-- Useful Links -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- JQuery Scripts -->
@@ -219,7 +219,7 @@
 
                     <div class="body-toll-info">
 
-                        <div onload="WhiteBorderBottom()" class="body-toll-info-subheaders-wrapper">
+                        <div class="body-toll-info-subheaders-wrapper">
                             <div class="body-toll-info-subheaders-container">
                                 <div class="body-toll-info-subheaders-button-container">
                                     <div class="body-toll-info-subheaders-buttons">
@@ -347,257 +347,239 @@
                         
                         <div class="body-toll-info-box-container">
 
-                            <div class="body-toll-info-box-contents">
+                            <div class="body-toll-info-box-contents" id="BodyTollInfoBoxContents">
                                 <div class="body-toll-info-box-wrapper">
                                     <div class="body-toll-info-box-header" id="BodyTollInfoBoxHeader">
                                         Hours Of Operation
                                     </div>
-                                    <div class="item1-body-toll-info-box">
-                                        <div class="item1-col1-header">
-                                            <div class="item1-col1-header-text">
-                                               - Main Office -
+                                    <div class="body-toll-info-box">
+                                        
+                                        <div class="body-toll-info-box-hoursopinfo" id="BodyTollInfoBoxHoursOp">
+                                            <div class="item1-col1-header">
+                                                <div class="item1-col1-header-text">
+                                                   - Main Office -
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    Monday - Friday
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    9:00am - 5:00pm
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    (956) 487-5606
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    contact@starrbridge.com
+                                                </div>
                                             </div>
-                                            <div class="item1-row-text">
-                                                Monday - Friday
-                                            </div>
-                                            <div class="item1-row-text">
-                                                9:00am - 5:00pm
-                                            </div>
-                                            <div class="item1-row-text">
-                                                (956) 487-5606
-                                            </div>
-                                            <div class="item1-row-text">
-                                                contact@starrbridge.com
+                                            <div class="item1-col2-header">
+                                                <div class="item1-col2-header-text">
+                                                   - Starr Camargo Bridge -
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    Monday - Sunday
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    7:00am - 11:00pm
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    7 Days a Week
+                                                </div>
+                                                <div class="item1-row-text">
+                                                    365 Days a Year
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="item1-col2-header">
-                                            <div class="item1-col2-header-text">
-                                               - Starr Camargo Bridge -
-                                            </div>
-                                            <div class="item1-row-text">
-                                                Monday - Sunday
-                                            </div>
-                                            <div class="item1-row-text">
-                                                7:00am - 11:00pm
-                                            </div>
-                                            <div class="item1-row-text">
-                                                7 Days a Week
-                                            </div>
-                                            <div class="item1-row-text">
-                                                365 Days a Year
+
+                                        <div hidden class="body-toll-info-box-cargovhinfo" id="BodyTollInfoBoxCargoVh">
+                                            <div class="item5-contents">
+                                                <div class="item5-col1-header">
+                                                    <div class="item5-col1-header-text">
+                                                        - Import -
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Monday - Friday:  8:00am - 9:00pm
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Saturday: 10:00am - 2:00pm
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Sunday - Closed
+                                                    </div>
+                                                </div>
+                                                <div class="item5-col2-header">
+                                                    <div class="item5-col2-header-text">
+                                                        - Export -
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Monday - Friday: 8:00am - 8:00pm
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Saturday: 10:00am - 1:00pm
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Sunday: 10:00am - 1:00pm
+                                                    </div>
+                                                </div>
+                                                <div class="item5-col3-header">
+                                                    <div class="item5-col3-header-text">
+                                                        - Empty -
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Monday - Friday:  8:00am - 9:00pm
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Saturday: 10:00am - 2:00pm
+                                                    </div>
+                                                    <div class="item5-row-text">
+                                                        Sunday - Closed
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <div hidden class="body-toll-info-box-fareschinfo" id="BodyTollInfoBoxFareSch">
+                                            <div class="item4-contents">
+                                                <div class="item4-col1-header">
+                                                    <div class="item4-col1-header-text">
+                                                        - Customer -
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Pedestrian
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Motorcycle | Car | Truck
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Non-Commercial 2 Axle
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial 2 Axle
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial 3 Axle
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial 4 Axle
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial 5 Axle
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial 6 Axle
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial 5/6 Axle Over
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial Overweight
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial Double Empty
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        Commercial Double Loaded
+                                                    </div>
+                                                </div>
+                                                <div class="item4-col2-header">
+                                                    <div class="item4-col2-header-text">
+                                                        - Toll -
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $1.00
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $3.50
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $10.75
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $12.75
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $14.75
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $17.75
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $21.25
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $24.25
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $26.00
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $36.50
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $37.50
+                                                    </div>
+                                                    <div class="item4-row-text">
+                                                        $42.50
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div hidden class="body-toll-info-box-permitsinfo" id="BodyTollInfoBoxPermIts">
+                                            <div class="item2-contents">
+                                                <div class="item2-row-text">
+                                                    Some Fruits and Vegtables
+                                                </div>
+                                                <div class="item2-row-text">
+                                                    Nuts
+                                                </div>
+                                                <div class="item2-row-text">
+                                                    Fuel
+                                                </div>
+                                                <div class="item2-row-text">
+                                                    Diesel
+                                                </div>
+                                                <div class="item2-row-text">
+                                                    Pale Oil
+                                                </div>
+                                                <div class="item2-row-text-link">
+                                                    <a href="about.html"> - Read More - </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div hidden class="body-toll-info-box-prohitsinfo" id="BodyTollInfoBoxProhIts">
+                                            <div class="item3-contents">
+                                                <div class="item3-row-text">
+                                                    Some Fruits and Vegtables
+                                                </div>
+                                                <div class="item3-row-text">
+                                                    Plants, Seeds, and Soil
+                                                </div>
+                                                <div class="item3-row-text">
+                                                    Meat and Game
+                                                </div>
+                                                <div class="item3-row-text">
+                                                    Poultry
+                                                </div>
+                                                <div class="item3-row-text">
+                                                    Eggs
+                                                </div>
+                                                <div class="item3-row-text">
+                                                    Live Birds
+                                                </div>
+                                                <div class="item3-row-text">
+                                                    Straw
+                                                </div>
+                                                <div class="item3-row-text-link">
+                                                    <a href="about.html"> - Read More - </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-<!-- 
-                            <div class="body-info-grid-item2">
-                                <div class="body-info-grid-item2-wrapper">
-                                    <div class="item2-header">
-                                        Permitted Items
-                                    </div>
-                                    <div class="item2-contents">
-                                        <div class="item2-row-text">
-                                            - Some Fruits and Vegtables
-                                        </div>
-                                        <div class="item2-row-text">
-                                            - Nuts
-                                        </div>
-                                        <div class="item2-row-text">
-                                            - Fuel
-                                        </div>
-                                        <div class="item2-row-text">
-                                            - Diesel
-                                        </div>
-                                        <div class="item2-row-text">
-                                            - Pale Oil
-                                        </div>
-                                        <div class="item2-row-text-link">
-                                            <a href="about.html"> - Read More - </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="body-info-grid-item3">
-                                <div class="body-info-grid-item3-wrapper">
-                                    <div class="item3-header">
-                                        Prohibited Items
-                                    </div>
-                                    <div class="item3-contents">
-                                        <div class="item3-row-text">
-                                            - Some Fruits and Vegtables
-                                        </div>
-                                        <div class="item3-row-text">
-                                            - Plants, Seeds, and Soil
-                                        </div>
-                                        <div class="item3-row-text">
-                                            - Meat and Game
-                                        </div>
-                                        <div class="item3-row-text">
-                                            - Poultry
-                                        </div>
-                                        <div class="item3-row-text">
-                                            - Eggs
-                                        </div>
-                                        <div class="item3-row-text">
-                                            - Live Birds
-                                        </div>
-                                        <div class="item3-row-text">
-                                            - Straw
-                                        </div>
-                                        <div class="item3-row-text-link">
-                                            <a href="about.html"> - Read More - </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="body-info-grid-item4">
-                                <div class="body-info-grid-item4-wrapper">
-                                    <div class="item4-header">
-                                        Fare Schedules
-                                    </div>
-                                    <div class="item4-contents">
-                                        <div class="item4-col1-header">
-                                            <div class="item4-col1-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                - Customer -
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Pedestrian
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Motorcycle | Car | Truck
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Non-Commercial 2 Axle
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial 2 Axle
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial 3 Axle
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial 4 Axle
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial 5 Axle
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial 6 Axle
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial 5/6 Axle Over
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial Overweight
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial Double Empty
-                                            </div>
-                                            <div class="item4-row-text">
-                                                Commercial Double Loaded
-                                            </div>
-                                        </div>
-                                        <div class="item4-col2-header">
-                                            <div class="item4-col2-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                - Toll -
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $1.00
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $3.50
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $9.75
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $11.75
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $12.75
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $15.25
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $19.25
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $22.25
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $24.00
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $34.50
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $32.50
-                                            </div>
-                                            <div class="item4-row-text">
-                                                $40.50
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="body-info-grid-item5">
-                                <div class="body-info-grid-item5-wrapper">
-                                    <div class="item5-header">
-                                        Cargo Vehicle Hours
-                                    </div>
-                                    <div class="item5-contents">
-
-                                        <div class="item5-col1-header">
-                                            <div class="item5-col1-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                Import
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Monday - Friday:  8:00am - 9:00pm
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Saturday: 10:00am - 2:00pm
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Sunday - Closed
-                                            </div>
-                                        </div>
-                                        <div class="item5-col2-header">
-                                            <div class="item5-col2-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                Export
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Monday - Friday: 8:00am - 8:00pm
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Saturday: 10:00am - 1:00pm
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Sunday: 10:00am - 1:00pm
-                                            </div>
-                                        </div>
-                                        <div class="item5-col3-header">
-                                            <div class="item5-col3-header-text" style="font-size: 1.35em; font-weight: 500;">
-                                                Empty
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Monday - Friday:  8:00am - 9:00pm
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Saturday: 10:00am - 2:00pm
-                                            </div>
-                                            <div class="item5-row-text">
-                                                Sunday - Closed
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-
                         </div>
 
                     </div>
@@ -820,6 +802,7 @@
             freeScroll: true
         });
     </script>
+
     <script>
         function SetBtnsOnPageLoad_HourInfoSection() {
 
@@ -837,7 +820,12 @@
             document.getElementById("nonwavyPPermIts").hidden = false;
             document.getElementById("wavyPProhIts").style.display = "none";
             document.getElementById("nonwavyPProhIts").hidden = false;
+
+            //Sets Margin for HoursOfOp Info Box
+            document.getElementById("BodyTollInfoBoxContents").style.marginLeft = "290px";
+            document.getElementById("BodyTollInfoBoxContents").style.marginRight = "290px";
         }
     </script>
+    
 </body>
 </html>
